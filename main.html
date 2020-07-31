@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    div {
+      border: 2px solid black;
+      outline: #4CAF50 solid 10px;
+      margin: auto;  
+      padding: 20px;
+      text-align: center;
+    }
+    </style>
+
+
+<body>
+
+    
+      
+      
+
+      <!-- Test Audio -->
+      <div>
+          <h3>Test Audio</h3>
+          <audio controls id="myAudio">
+            <source src="Audio\testWav.wav" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <button onclick="toggleLoop()" type="button">Loop</button>
+       </div>
+
+<script>
+    function toggleLoop() {
+        let loopTrue = false;
+
+        if (document.getElementById("myAudio").loop == false) {
+            document.getElementById("myAudio").loop = true;
+            loopTrue = true;
+
+            console.log('Loop = true')
+        } else {
+            document.getElementById("myAudio").loop = false;
+            loopTrue = false;
+
+            console.log('Loop = false')
+        }
+    }
+</script>
+    
+</body>
+</html>
