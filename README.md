@@ -1,2 +1,2 @@
-# ddSoundBoard
-D&amp;D Soundboard for Tabletop Simulator
+# Project Proposal
+All rights reserved 
